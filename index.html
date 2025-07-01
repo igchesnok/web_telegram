@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My WebApp</title>
+</head>
+<body>
+    <h1>Отправить сообщение в Android</h1>
+    <button onclick="sendMessage()">Отправить "Привет" в приложение</button>
+
+    <script>
+        function sendMessage() {
+            // Открытие кастомного URL
+            window.open("myapp://open?message=Привет", "_self");
+        }
+    </script>
+</body>
+</html>
